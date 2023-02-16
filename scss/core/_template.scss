@@ -24,6 +24,8 @@ body {
 
 	font-size: $main_font_size;
 
+	// background-color: #F0EFEF;
+
 }
 
 /* Middle
@@ -40,7 +42,11 @@ body {
 }
 
 .section {
-	padding: 2em 0;
+	padding: 3.125em 0 1.875em;
+
+	@media (min-width: 768px) {
+		padding: 11.25em 0 10em;
+	}
 
 	&:first-child {
 		padding-top: 5em;
@@ -49,13 +55,17 @@ body {
 		}
 	}
 
+	&_dark {
+		background-color: $main_color;
+		color: $color_white;
+	}
+
 	&__title {
 		line-height: 0.9;
 		margin: 0;
 		font-size: 0.75em;
 
 		@media (min-width: 768px) {
-
 			font-size: 1em;
 		}
 
@@ -74,7 +84,27 @@ body {
 			color: $color_warning;
 			line-height: 0;
 		}
+
+		&_sm {
+			line-height: 1.1;
+			font-size: 0.42em;
+
+			@media (min-width: 768px) {
+				font-size: 1em;
+			}
+
+			span {
+				font-size: 3.875em;
+				/* 62/16 */
+			}
+
+			i {
+				font-size: 1.22581em;
+				/* 76/16 */
+			}
+		}
 	}
+
 }
 
 .desktop {

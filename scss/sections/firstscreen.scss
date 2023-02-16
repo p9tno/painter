@@ -4,6 +4,22 @@
         padding-top: 0!important;
         padding-bottom: 0;
         background-color: $color_white;
+
+        overflow: hidden;
+
+        &:after {
+            content: '';
+
+            position: absolute;
+            top: 14em;
+            right: -8em;
+
+            width: 75.125em;
+            height: 65.9375em;
+            border-radius: 100%;
+            background: rgba(245, 216, 255, 0.2);
+            filter: blur(200px);
+        }
     }
 
     &__row {

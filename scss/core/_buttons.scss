@@ -82,12 +82,12 @@
 
 	@media (min-width: 768px) {
 		&:hover {
-			color: darken($color_warning, 8%);
-
-			&:after,
-			&:before {
-				border-color: darken($color_warning, 8%);
-			}
+			// color: darken($color_warning, 8%);
+			//
+			// &:after,
+			// &:before {
+			// 	border-color: darken($color_warning, 8%);
+			// }
 
 			span {
 				&:after {
@@ -96,9 +96,9 @@
 			}
 		}
 
-		&:active {
-			color: darken($color_warning, 0%);
-		}
+		// &:active {
+		// 	color: darken($color_warning, 0%);
+		// }
 	}
 
 }

@@ -1,0 +1,147 @@
+.creativity {
+    .section__title {
+        color: #D8D1DB;
+
+        span {
+            display: block;
+
+            &:first-child {
+                text-align: right;
+
+            }
+        }
+    }
+
+    &__row {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__col {
+        margin-bottom: 2em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+
+        }
+
+        &:first-child {
+            @media (min-width: 768px) {
+                width: 51em;
+            }
+        }
+
+        &:last-child {
+            @media (min-width: 768px) {
+                width: 28.125em;
+
+            }
+        }
+    }
+
+    &__product {
+        .product {
+            &__bg {
+                width: 100%;
+                padding-bottom: 22.125em;
+                @media (min-width: 768px) {
+                    padding-bottom: 29.125em;
+                }
+            }
+        }
+    }
+
+    &__content {
+        margin-top: 1.5em;
+        @media (min-width: 768px) {
+            margin-top: 3.125em;
+            width: 35.75em;
+            margin-left: auto;
+        }
+
+        span {
+            font-size: 0.875em;
+            line-height: 1.55;
+            font-weight: 300;
+            @media (min-width: 768px) {
+                line-height: 1.8;
+
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 1em;
+        margin-left: 12em;
+        @media (min-width: 768px) {
+            margin-top: 4em;
+            margin-left: 4em;
+
+        }
+    }
+
+}
+
+.product {
+    color: #D8D1DB;
+
+    &__bg {
+        margin-bottom: 1.125em;
+        @media (min-width: 768px) {
+            margin-bottom: 2.125em;
+
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__desc {
+        font-weight: 600;
+        text-transform: uppercase;
+
+        span {
+            font-size: 0.875em;
+        }
+    }
+
+    &__title {
+        @media (min-width: 768px) {
+            margin-bottom: 0.25em;
+
+        }
+    }
+
+    &__info {
+        display: flex;
+        color: #73637A;
+    }
+
+    &__cat {}
+
+    &__catname {}
+
+    &__currency {
+        letter-spacing: -0.05em;
+
+        span {
+            font-family: 'Cormorant Infant';
+            font-weight: 500;
+            font-style: italic;
+            font-size: 2em;
+        }
+    }
+
+}
+
+.bg {}
+
+.btn {}
