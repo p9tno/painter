@@ -67,15 +67,48 @@ $(document).ready(function() {
             let top = $(id).offset().top;
             $('body,html').animate({scrollTop: top}, 700);
         });
-
-        // $(window).scroll(function(){
-        //     if($(window).scrollTop()>500){
-        //         $('.toTop').fadeIn(900)
-        //     }else{
-        //         $('.toTop').fadeOut(700)
-        //     }
-        // });
     }
-    scrollTop()
+    scrollTop();
+
+    const singleSlider = new Swiper('.single_swiper_js', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        speed: 500,
+        // loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true
+        },
+        pagination: {
+            el: '.singleSlider__dotted',
+            clickable: true,
+        },
+
+    });
+
+    const reviews = new Swiper('.reviews_swiper_js', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 500,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        navigation: {
+            nextEl: '.icon_arrow_left',
+            // prevEl: '.icon_arrow_left',
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 20,
+                slidesPerView: 3,
+            },
+
+        }
+
+    });
 
 });

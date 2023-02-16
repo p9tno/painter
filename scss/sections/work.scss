@@ -1,0 +1,101 @@
+.work {
+    .section__title {
+        @media (max-width: 767px) {
+            font-size: 0.55em;
+            text-align: center;
+        }
+    }
+
+    &__content {
+        margin-top: 2em;
+        @media (min-width: 768px) {
+            margin-top: 4.25em;
+
+        }
+    }
+
+    &__row {
+
+        @media (min-width: 768px) {
+            margin-bottom: 6.875em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .product {
+            margin-bottom: 2em;
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+
+            &__bg {
+                padding-bottom: 21.4375em;
+
+                @media (min-width: 768px) {
+                    padding-bottom: 47.5em;
+
+                }
+            }
+
+        }
+
+        // start grid_2
+        &.grid_2 {
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-gap: 5.125em;
+                grid-template-columns: 1fr 1fr;
+                width: 70.625em;
+                margin-left: auto;
+                margin-right: auto;
+
+                .product {
+                    .product__bg {
+                        padding-bottom: 33.625em;
+                    }
+
+                }
+            }
+
+        }
+        // end grid_2
+
+        // start grid_3
+        &.grid_3 {
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 43.125em 20.9375em 20.9375em;
+                grid-gap: 1.25em;
+
+                .product {
+                    &:nth-child(n+2) {
+                        height: fit-content;
+
+                        .product__bg {
+                            padding-bottom: 25.75em;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+        // end grid_3
+
+    }
+
+    &__button {
+        margin-top: 2em;
+        @media (min-width: 768px) {
+            margin-top: 7em;
+
+        }
+        text-align: center;
+    }
+
+}

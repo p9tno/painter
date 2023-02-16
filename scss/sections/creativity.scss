@@ -54,7 +54,15 @@
                     padding-bottom: 29.125em;
                 }
             }
+
+            &__currency {
+                span {
+
+                    color: #D8D1DB;
+                }
+            }
         }
+
     }
 
     &__content {
@@ -87,61 +95,3 @@
     }
 
 }
-
-.product {
-    color: #D8D1DB;
-
-    &__bg {
-        margin-bottom: 1.125em;
-        @media (min-width: 768px) {
-            margin-bottom: 2.125em;
-
-        }
-    }
-
-    &__content {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__desc {
-        font-weight: 600;
-        text-transform: uppercase;
-
-        span {
-            font-size: 0.875em;
-        }
-    }
-
-    &__title {
-        @media (min-width: 768px) {
-            margin-bottom: 0.25em;
-
-        }
-    }
-
-    &__info {
-        display: flex;
-        color: #73637A;
-    }
-
-    &__cat {}
-
-    &__catname {}
-
-    &__currency {
-        letter-spacing: -0.05em;
-
-        span {
-            font-family: 'Cormorant Infant';
-            font-weight: 500;
-            font-style: italic;
-            font-size: 2em;
-        }
-    }
-
-}
-
-.bg {}
-
-.btn {}
