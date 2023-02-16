@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-MediumItalic.eot');
+    src: url('CormorantInfant-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-MediumItalic.woff2') format('woff2'),
+        url('CormorantInfant-MediumItalic.woff') format('woff'),
+        url('CormorantInfant-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

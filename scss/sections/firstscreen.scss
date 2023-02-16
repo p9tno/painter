@@ -1,0 +1,94 @@
+.firstscreen {
+    @media (min-width: 768px) {
+        position: relative;
+        padding-top: 0!important;
+        padding-bottom: 0;
+        background-color: $color_white;
+    }
+
+    &__row {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            min-height: 49.375em;
+            padding-top: 3.75em;
+            padding-bottom: 5.375em;
+        }
+    }
+
+    &__col {
+        margin-bottom: 2em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+
+            &:first-child {
+                width: 25em;
+            }
+
+            &:last-child {
+                width: 24.25em;
+                margin-top: 9em;
+            }
+
+        }
+    }
+
+    &__button {
+        .btn {
+            margin-left: 16em;
+            margin-top: -1.5em;
+            @media (min-width: 768px) {
+                margin-left: 11.75em;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        margin-top: 6em;
+
+        @media (min-width: 768px) {
+            margin-top: 14em;
+            margin-left: -1em;
+        }
+
+        span {
+            font-size: 0.875em;
+            line-height: 1.55;
+        }
+    }
+
+    &__masc {
+        flex: none;
+        width: 3.5em;
+        height: 5.4375em;
+        margin-right: 2em;
+        background-image: url("../img/firstscreen_mask.svg");
+    }
+
+    &__bg {
+        margin: 0 -1em;
+        width: 23.4375em;
+        height: 37.5em;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+
+            margin: 0;
+            width: 30.875em;
+            height: 100%;
+
+        }
+    }
+
+}

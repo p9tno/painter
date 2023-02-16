@@ -1,0 +1,17 @@
+@import 'mixins/mixin'; // Fonts
+// Import files
+@import 'variables/variables';
+@import 'core/fonts';
+@import "../fonts/icon/style.css";
+@import 'core/reset';
+@import 'core/template';
+
+@import 'core/header';
+@import 'core/footer';
+@import 'core/buttons';
+@import 'core/toggle';
+@import 'core/basket';
+
+@import 'sections/firstscreen';
+
+@import 'vendor/swiper';

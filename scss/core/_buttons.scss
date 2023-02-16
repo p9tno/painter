@@ -1,0 +1,133 @@
+// Style for button and pseudo button for input and link
+
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: 2em 5em 2em 1em;
+
+	max-width: 100%;
+
+	border: none;
+	border-radius: 100%;
+
+	font-family: $main_font_family;
+	font-weight: 600;
+	color: $color_warning;
+	background-color: none;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	line-height: 1;
+	font-size: 0.7em;
+	@media (min-width: 768px) {
+		font-size: 1em;
+
+	}
+
+	span {
+		position: relative;
+		font-size: 0.875em;
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-55%);
+			right: -2.75em;
+			content: '\e902';
+			font-family: 'icomoon';
+			font-size: 1.25em;
+
+			@media (min-width: 768px) {
+				transition: 0.3s;
+			}
+
+		}
+	}
+
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 14em;
+		height: 5.875em;
+		border-radius: 100%;
+		opacity: 0.8;
+		border-color: $color_warning;
+		transition: 0.3s;
+	}
+
+	&:before {
+		border: 0.0625em solid;
+
+		transform: translate(-53%, -48%) rotate(-7deg) scale(1);
+
+		animation: 3s pulse1 infinite;
+		animation-delay: 1.5s;
+
+	}
+
+	&:after {
+		border: 0.125em solid;
+		transform: translate(-53%, -50%) rotate(-14deg) scale(1);
+
+		animation: 3s pulse2 infinite;
+
+	}
+
+	@media (min-width: 768px) {
+		&:hover {
+			color: darken($color_warning, 8%);
+
+			&:after,
+			&:before {
+				border-color: darken($color_warning, 8%);
+			}
+
+			span {
+				&:after {
+					right: -3em;
+				}
+			}
+		}
+
+		&:active {
+			color: darken($color_warning, 0%);
+		}
+	}
+
+}
+
+@keyframes pulse1 {
+	0% {
+		transform: translate(-53%, -48%) rotate(-7deg) scale(1);
+	}
+
+	60% {
+		opacity: 0.3;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate(-53%, -48%) rotate(-7deg) scale(1.1);
+	}
+}
+@keyframes pulse2 {
+	0% {
+		transform: translate(-53%, -50%) rotate(-14deg) scale(1);
+	}
+
+	60% {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate(-53%, -50%) rotate(-14deg) scale(1.1);
+	}
+}

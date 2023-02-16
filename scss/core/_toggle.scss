@@ -1,0 +1,66 @@
+.toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+    cursor: pointer;
+
+    &__label {
+        margin-right: 0.5em;
+        text-transform: uppercase;
+
+        span {
+            font-size: 1em;
+            font-weight: 500;
+            color: $main_color;
+        }
+    }
+
+    &__button {}
+
+    &__toggle {
+        position: relative;
+        width: 1em;
+        height: 0.7em;
+        color: $main_color;
+        border: 0.1em solid;
+        border-left: 0;
+        border-right: 0;
+        z-index: 51;
+        cursor: pointer;
+
+        &:after,
+        &:before {
+            content: '';
+            display: inline-block;
+            border-top: 0.1em solid;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.05em;
+            left: 0;
+            width: 100%;
+            transition: transform 0.3s;
+
+        }
+
+        &.active {
+            border: 0;
+
+            &:after,
+            &:before {
+                content: '';
+                border-top: 0.1em solid $main_color;
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+}

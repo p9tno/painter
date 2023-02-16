@@ -1,0 +1,52 @@
+extends ../layout/layout.pug
+block variable
+    -var path = '../';
+
+block content
+
+    // begin firstscreen
+    section#firstscreen.firstscreen.section
+        .container_center
+            .firstscreen__row
+
+                .firstscreen__col
+                    h1.section__title
+                        span Lusine<br>Saakyan<br><i>art</i>
+                    .firstscreen__button
+
+                        a.btn(href="#")
+                            span explore
+
+                    .firstscreen__content
+                        .firstscreen__masc.bg
+                        span Artists’ creativity works in mysterious and paradoxical  ways. Creative thinking is a stable defining characteristic in some personalities but it may change based on situation and context. My inspiration and ideas 
+
+
+                .firstscreen__col
+                    .firstscreen__bg.bg(style="background-image: url('../../img/firstImg.jpg')")
+
+                .firstscreen__col
+                    .swiper.singleSlider.single_swiper_js.itemForDataFancybox_js
+                        .swiper-wrapper
+
+                            each item in ['', '', '', '', '', '']
+                                .swiper-slide
+                                    .singleSlider__slide
+                                        .singleSlider__img.img
+                                            a(href="../../img/slideImg.jpg" data-fancybox data-type="image")
+                                                img(src="../../img/slideImg.jpg" loading="lazy" alt="img")
+
+                                        .singleSlider__content
+                                            a.singleSlider__link(href="#test")
+                                                span Decorative Bouquet. Series: nature
+                                                i.icon_arrow_right
+
+                                            .singleSlider__desc
+                                                span Yellow flower bouquet with decorative detail. Bright lively composition with dark blue purple background. In private collection.
+
+
+                        .singleSlider__control
+                            .singleSlider__dotted
+
+
+    // end firstscreen

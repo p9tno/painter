@@ -1,0 +1,34 @@
+.basket {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    &__label {
+        text-transform: uppercase;
+        margin-right: 0.3125em;
+
+        span {
+            font-size: 1em;
+            font-weight: 500;
+            color: $main_color;
+        }
+
+    }
+
+    &__count {
+        span {
+            font-size: 1em;
+            font-weight: 500;
+            color: $main_color;
+
+            &:before {
+                content: '(';
+            }
+
+            &:after {
+                content: ')';
+            }
+        }
+    }
+}
