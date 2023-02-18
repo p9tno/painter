@@ -70,7 +70,10 @@ block content
                 .creativity__col
                     .creativity__product
                         a(href="#").product
-                            .product__bg.bg(style="background-image: url('../../img/creativity_bg.jpg')")
+                            .product__wrap
+                                .product__img.img
+                                    img(src="../../img/creativity_bg.jpg", alt="alt")
+
 
                             .product__content
 
@@ -121,7 +124,9 @@ block content
                 .work__row.grid_3
                     each item in [1,2,3]
                         a(href="#").product
-                            .product__bg.bg(style="background-image: url('../../img/work_"+item+".jpg')")
+                            .product__wrap
+                                .product__img.img
+                                    img(src="../../img/work_"+item+".jpg", alt="alt")
                             .product__content
                                 .product__desc
                                     .product__title
@@ -138,7 +143,9 @@ block content
 
                 .work__row
                     a(href="#").product
-                        .product__bg.bg(style="background-image: url('../../img/work_4.jpg')")
+                        .product__wrap
+                            .product__img.img
+                                img(src="../../img/work_4.jpg", alt="alt")
                         .product__content
                             .product__desc
                                 .product__title
@@ -155,7 +162,9 @@ block content
                 .work__row.grid_2
                     each item in [5,6]
                         a(href="#").product
-                            .product__bg.bg(style="background-image: url('../../img/work_"+item+".jpg')")
+                            .product__wrap
+                                .product__img.img
+                                    img(src="../../img/work_"+item+".jpg", alt="alt")
                             .product__content
                                 .product__desc
                                     .product__title
@@ -172,7 +181,9 @@ block content
 
                 .work__row
                     a(href="#").product
-                        .product__bg.bg(style="background-image: url('../../img/work_7.jpg')")
+                        .product__wrap
+                            .product__img.img
+                                img(src="../../img/work_7.jpg", alt="alt")
                         .product__content
                             .product__desc
                                 .product__title

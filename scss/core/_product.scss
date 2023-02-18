@@ -5,19 +5,27 @@
 
     @media (min-width: 768px) {
         &:hover {
-            .product__bg {
-                background-size: 110% 110%;
+            .product__img {
+                transform: scale(1.4);
             }
+
         }
     }
 
-    &__bg {
+    &__wrap {
         margin-bottom: 1.125em;
         @media (min-width: 768px) {
             margin-bottom: 2.125em;
-            background-size: 100% 100%;
-            transition: background-size 0.3s;
+            overflow: hidden;
         }
+    }
+
+    &__img {
+        @media (min-width: 768px) {
+            transform: scale(1);
+            transition: transform 1s;
+        }
+
     }
 
     &__content {

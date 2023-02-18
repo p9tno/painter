@@ -47,17 +47,16 @@
 
     &__product {
         .product {
-            &__bg {
-                width: 100%;
-                padding-bottom: 22.125em;
+            &__img {
+                height: 22.125em;
                 @media (min-width: 768px) {
-                    padding-bottom: 29.125em;
+                    height: 29.125em;
                 }
+
             }
 
             &__currency {
                 span {
-
                     color: #D8D1DB;
                 }
             }

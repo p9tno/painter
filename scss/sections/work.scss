@@ -31,12 +31,11 @@
                 margin-bottom: 0;
             }
 
-            &__bg {
-                padding-bottom: 21.4375em;
+            &__img {
+                height: 21.4375em;
 
                 @media (min-width: 768px) {
-                    padding-bottom: 47.5em;
-
+                    height: 47.5em;
                 }
             }
 
@@ -54,8 +53,8 @@
                 margin-right: auto;
 
                 .product {
-                    .product__bg {
-                        padding-bottom: 33.625em;
+                    .product__img {
+                        height: 33.625em;
                     }
 
                 }
@@ -75,8 +74,8 @@
                     &:nth-child(n+2) {
                         height: fit-content;
 
-                        .product__bg {
-                            padding-bottom: 25.75em;
+                        .product__img {
+                            height: 25.75em;
                         }
 
                     }
